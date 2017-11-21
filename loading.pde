@@ -4,6 +4,7 @@ void setup() {
   size(1080,720);
   frameRate(30);
   background(255);
+  noStroke();
 }
 
 void draw(){  
