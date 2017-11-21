@@ -1,4 +1,4 @@
-float r = 100,r_small = 25, theta = 0, incr = 20 , alpha = 100;
+float r = 100,r_small = 25, theta = 0, incr = 20 , alpha = 0;
 
 void setup() {
   size(1080,720);
@@ -16,9 +16,9 @@ void draw(){
   if(theta >= 360) theta = 0;
   else theta += incr;
   
-  alpha -=5;
-  if(alpha <= 0){
-    alpha = 100;
+  alpha +=5;
+  if(alpha > 100){
+    alpha = 0;
     background(255);
   }
   
